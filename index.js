@@ -1,5 +1,4 @@
 
-
 import React, { useState, useReducer, useCallback, useMemo, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -638,7 +637,12 @@ const LoginScreen = ({ onLogin }) => {
         }
     };
     return React.createElement(Page, null,
-        React.createElement("div", { className: "flex flex-col items-center" },
+        React.createElement("div", { className: "relative w-full flex flex-col items-center" },
+            React.createElement("img", {
+                src: "/Impostor_Futbolero_Logo_SF.png",
+                alt: "El Impostor Futbolero Logo",
+                className: "absolute inset-0 w-[48rem] h-[48rem] m-auto opacity-50 -z-10"
+            }),
             React.createElement("h1", { className: "text-6xl md:text-7xl font-bold my-2 uppercase tracking-wider text-shadow text-gold-gradient" }, "El Impostor"),
             React.createElement("h2", { className: "text-5xl md:text-6xl font-bold mb-4 uppercase tracking-wider text-shadow text-white" }, "Futbolero"),
             React.createElement("p", { className: "text-xl text-gray-300 mb-8" }, "El juego de los cracks."),
