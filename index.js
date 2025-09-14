@@ -581,8 +581,6 @@ const gameReducer = (state, action) => {
 
 // UI Components
 const Page = ({ children }) => React.createElement("div", { className: "min-h-screen text-white flex flex-col items-center justify-center p-4 text-center relative overflow-hidden" },
-    // Fondo de pantalla
-    React.createElement("img", { src: fondoFutbol, alt: "Fondo Futbol", className: "absolute inset-0 w-full h-full object-cover z-0 opacity-30" }),
     React.createElement("div", { className: "w-full max-w-md mx-auto z-10 fade-in" }, children)
 );
 const Button = (props) => React.createElement("button", { ...props, className: `w-full px-4 py-3 font-bold text-lg rounded-lg transition-transform transform duration-200 uppercase tracking-wider button-3d ${props.disabled ? 'bg-gray-500 text-gray-300 cursor-not-allowed shadow-none' : 'bg-gradient-to-b from-[--gold-light] to-[--gold-primary] hover:from-yellow-300 hover:to-yellow-400 text-green-900 shadow-[0_4px_0_0_var(--gold-dark)] hover:shadow-[0_2px_0_0_var(--gold-dark)] active:translate-y-1 active:shadow-none'} ${props.className || ''}` });
