@@ -664,7 +664,6 @@ const ModeSelectionScreen = ({ loggedInUser, dispatch, onLogout }) => {
             )
         ),
         React.createElement("div", { className: "flex flex-col items-center" },
-            React.createElement(WhistleIcon, { className: "w-20 h-20 text-yellow-400 mb-4" }),
             React.createElement("h1", { className: "text-4xl font-bold mb-2 text-shadow" }, "¡Hola, ", loggedInUser, "!"),
             React.createElement("p", { className: "text-xl text-gray-300 mb-8" }, "Elige un modo de juego"),
             React.createElement(Card, { className: "w-full space-y-4" },
