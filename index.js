@@ -1,4 +1,5 @@
 
+
 import React, { useState, useReducer, useCallback, useMemo, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -639,7 +640,7 @@ const LoginScreen = ({ onLogin }) => {
     return React.createElement(Page, null,
         React.createElement("div", { className: "relative w-full flex flex-col items-center" },
             React.createElement("img", {
-                src: "/assets/image/Impostor_Futbolero_Logo_SF.png",
+                src: "assets/image/Impostor_Futbolero_Logo_SF.png",
                 alt: "El Impostor Futbolero Logo",
                 className: "absolute inset-0 w-[48rem] h-[48rem] m-auto opacity-50 -z-10"
             }),
