@@ -580,8 +580,8 @@ const gameReducer = (state, action) => {
 };
 
 // Importar imágenes correctamente usando rutas públicas
-const fondoFutbol = '/images/FondoFutbol1.png';
-const impostorSinTexto = '/images/Impostor_Sin_Texto.png';
+const fondoFutbol = '/FondoFutbol1.png';
+const impostorSinTexto = '/Impostor_Sin_Texto.png';
 
 // UI Components
 const Page = ({ children }) => React.createElement("div", { className: "min-h-screen text-white flex flex-col items-center justify-center p-4 text-center relative overflow-hidden" },
