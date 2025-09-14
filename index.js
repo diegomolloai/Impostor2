@@ -643,7 +643,6 @@ const LoginScreen = ({ onLogin }) => {
     };
     return React.createElement(Page, null,
         React.createElement("div", { className: "flex flex-col items-center" },
-            React.createElement("img", { src: impostorSinTexto, alt: "Logo Impostor", className: "w-40 h-40 mb-2 mx-auto" }),
             React.createElement("h1", { className: "text-6xl md:text-7xl font-bold my-2 uppercase tracking-wider text-shadow text-gold-gradient" }, "El Impostor"),
             React.createElement("h2", { className: "text-5xl md:text-6xl font-bold mb-4 uppercase tracking-wider text-shadow text-white" }, "Futbolero"),
             React.createElement("p", { className: "text-xl text-gray-300 mb-8" }, "El juego de los cracks."),
