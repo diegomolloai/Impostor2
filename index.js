@@ -579,8 +579,16 @@ const gameReducer = (state, action) => {
   }
 };
 
+// Importar imágenes correctamente usando rutas públicas
+const fondoFutbol = '/images/FondoFutbol1.png';
+const impostorSinTexto = '/images/Impostor_Sin_Texto.png';
+
 // UI Components
-const Page = ({ children }) => React.createElement("div", { className: "min-h-screen text-white flex flex-col items-center justify-center p-4 text-center relative overflow-hidden" }, React.createElement("div", { className: "w-full max-w-md mx-auto z-10 fade-in" }, children));
+const Page = ({ children }) => React.createElement("div", { className: "min-h-screen text-white flex flex-col items-center justify-center p-4 text-center relative overflow-hidden" },
+    // Fondo de pantalla
+    React.createElement("img", { src: fondoFutbol, alt: "Fondo Futbol", className: "absolute inset-0 w-full h-full object-cover z-0 opacity-30" }),
+    React.createElement("div", { className: "w-full max-w-md mx-auto z-10 fade-in" }, children)
+);
 const Button = (props) => React.createElement("button", { ...props, className: `w-full px-4 py-3 font-bold text-lg rounded-lg transition-transform transform duration-200 uppercase tracking-wider button-3d ${props.disabled ? 'bg-gray-500 text-gray-300 cursor-not-allowed shadow-none' : 'bg-gradient-to-b from-[--gold-light] to-[--gold-primary] hover:from-yellow-300 hover:to-yellow-400 text-green-900 shadow-[0_4px_0_0_var(--gold-dark)] hover:shadow-[0_2px_0_0_var(--gold-dark)] active:translate-y-1 active:shadow-none'} ${props.className || ''}` });
 const SecondaryButton = (props) => React.createElement("button", { ...props, className: `w-full px-4 py-3 font-bold text-lg rounded-lg transition-transform transform duration-200 uppercase tracking-wider button-3d bg-gradient-to-b from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 border-2 border-green-400 hover:border-green-300 text-white shadow-[0_4px_0_0_#065f46] hover:shadow-[0_2px_0_0_#065f46] active:translate-y-1 active:shadow-none ${props.className || ''}` });
 const Input = (props) => React.createElement("input", { ...props, className: `w-full px-4 py-3 bg-[rgba(0,0,0,0.3)] border-2 border-[rgba(255,255,255,0.2)] rounded-lg focus:outline-none focus:border-[--gold-primary] text-white text-lg placeholder:text-gray-400 ${props.className || ''}` });
@@ -639,6 +647,7 @@ const LoginScreen = ({ onLogin }) => {
     };
     return React.createElement(Page, null,
         React.createElement("div", { className: "flex flex-col items-center" },
+            React.createElement("img", { src: impostorSinTexto, alt: "Logo Impostor", className: "w-40 h-40 mb-2 mx-auto" }),
             React.createElement("h1", { className: "text-6xl md:text-7xl font-bold my-2 uppercase tracking-wider text-shadow text-gold-gradient" }, "El Impostor"),
             React.createElement("h2", { className: "text-5xl md:text-6xl font-bold mb-4 uppercase tracking-wider text-shadow text-white" }, "Futbolero"),
             React.createElement("p", { className: "text-xl text-gray-300 mb-8" }, "El juego de los cracks."),
