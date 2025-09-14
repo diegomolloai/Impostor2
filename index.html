@@ -41,30 +41,21 @@
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: -2;
+        background: url('/public/images/FondoFutbol1.png') center center / cover no-repeat;
+      }
+      body::after {
+        content: '';
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        height: 600px;
+        transform: translate(-50%, -50%);
         z-index: -1;
-        /* Base color of the ground/soil */
-        background-color: var(--green-dark);
-        /* Multiple layers of "blades" to create a 3D texture effect */
-        background-image:
-          /* Layer 1: Lighter green highlights pointing one way */
-          repeating-linear-gradient(
-            -25deg,
-            transparent,
-            transparent 4px,
-            var(--green-light) 4px,
-            var(--green-light) 5px
-          ),
-          /* Layer 2: Main grass blades, medium green, pointing another way */
-          repeating-linear-gradient(
-            25deg,
-            transparent,
-            transparent 3px,
-            var(--green-medium) 3px,
-            var(--green-medium) 4.5px
-          );
-        /* Control the density and scale of the blades */
-        background-size: 15px 15px, 15px 15px;
-        opacity: 0.25; /* Adjust overall visibility to keep it from being distracting */
+        background: url('/public/images/Impostor_Sin_Texto.png') center center / contain no-repeat;
+        opacity: 0.8;
+        pointer-events: none;
       }
       #root {
         position: relative;
@@ -136,11 +127,11 @@
         }
       }
        .text-gold-gradient {
-        background: linear-gradient(to bottom, var(--gold-light), var(--gold-primary));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+  background: linear-gradient(to bottom, var(--gold-light), var(--gold-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
       }
     </style>
   <script type="importmap">
