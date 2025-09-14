@@ -640,8 +640,8 @@ const LoginScreen = ({ onLogin }) => {
     return React.createElement(Page, null,
         React.createElement("div", { className: "relative w-full flex flex-col items-center" },
             React.createElement("img", {
-                src: "Impostor_Futbolero_Logo_SF.png",
-                alt: "El Impostor Futbolero Logo",
+                src: "Impostor_Sin_Texto.png",
+                alt: "El Impostor Futbolero Logo ST",
                 className: "absolute inset-0 w-[48rem] h-[48rem] m-auto opacity-50 -z-10"
             }),
             React.createElement("h1", { className: "text-6xl md:text-7xl font-bold my-2 uppercase tracking-wider text-shadow text-gold-gradient" }, "El Impostor"),
