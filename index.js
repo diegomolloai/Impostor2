@@ -609,7 +609,7 @@ const QuitButton = ({ onQuit }) => {
 };
 
 const HelpModal = ({ onClose }) => React.createElement("div", { className: "fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 z-50 fade-in", onClick: onClose },
-    React.createElement("div", { className: "bg-green-900/80 rounded-xl p-6 shadow-2xl border-2 border-yellow-400/50 max-w-lg w-full text-left", onClick: e => e.stopPropagation() },
+    React.createElement("div", { className: "bg-green-900/80 rounded-xl p-6 shadow-2xl border-2 border-yellow-400/50 max-w-md w-full text-left", onClick: e => e.stopPropagation() },
         React.createElement("h2", { className: "text-3xl font-bold mb-4 text-gold-gradient text-shadow" }, "¿Cómo Jugar?"),
         React.createElement("div", { className: "space-y-4 text-gray-200" },
             React.createElement("p", null, React.createElement("strong", null, "Objetivo:"), " ¡Encontrar al impostor que no sabe quién es el futbolista secreto!"),
@@ -618,13 +618,7 @@ const HelpModal = ({ onClose }) => React.createElement("div", { className: "fixe
                 React.createElement("li", null, React.createElement("strong", { className: "text-blue-400" }, "Miembro del Equipo:"), " Sabes quién es el futbolista. Tu objetivo es dar pistas para que los demás te crean y votar para eliminar al impostor."),
                 React.createElement("li", null, React.createElement("strong", { className: "text-red-500" }, "Impostor:"), " No sabes quién es el futbolista. Tu objetivo es engañar a todos, hacerles creer que eres del equipo y sobrevivir a las votaciones.")
             ),
-            React.createElement("p", null, React.createElement("strong", null, "Flujo del Juego (Online):")),
-            React.createElement("ol", { className: "list-decimal list-inside ml-4" },
-                React.createElement("li", null, React.createElement("strong", null, "Pistas:"), " Cada jugador da una pista sobre el futbolista. ¡El impostor debe improvisar!"),
-                React.createElement("li", null, React.createElement("strong", null, "Debate:"), " Discutid las pistas para encontrar contradicciones."),
-                React.createElement("li", null, React.createElement("strong", null, "Votación:"), " Todos votan para eliminar al jugador que creen que es el impostor.")
-            ),
-            React.createElement("p", null, React.createElement("strong", null, "Flujo del Juego (Offline):"), " Es más simple. No hay pistas, solo debate y votación directa."),
+            React.createElement("p", null, React.createElement("strong", null, "Flujo del Juego:"), " Debate entre todos y votad para eliminar al jugador que creéis que es el impostor."),
             React.createElement("p", {className: "pt-2 font-bold"}, "¡El equipo gana si elimina a todos los impostores! ¡Los impostores ganan si su número iguala o supera al de los miembros del equipo!")
         ),
         React.createElement(Button, { onClick: onClose, className: "mt-6" }, "Entendido")
@@ -658,18 +652,20 @@ const ModeSelectionScreen = ({ loggedInUser, dispatch, onLogout }) => {
     const [isHelpVisible, setIsHelpVisible] = useState(false);
     return React.createElement(Page, null,
         isHelpVisible && React.createElement(HelpModal, { onClose: () => setIsHelpVisible(false) }),
-        React.createElement("div", { className: "absolute top-4 right-4" },
+        React.createElement("div", { className: "absolute top-4 right-4 z-20" },
             React.createElement("button", { onClick: onLogout, className: "flex items-center gap-2 text-sm text-yellow-300 hover:text-white transition-colors" },
                 React.createElement(LogoutIcon, { className: "w-5 h-5" }), " Salir"
             )
         ),
-        React.createElement("div", { className: "flex flex-col items-center" },
-            React.createElement("h1", { className: "text-4xl font-bold mb-2 text-shadow" }, "¡Hola, ", loggedInUser, "!"),
-            React.createElement("p", { className: "text-xl text-gray-300 mb-8" }, "Elige un modo de juego"),
-            React.createElement(Card, { className: "w-full space-y-4" },
-                React.createElement(Button, { onClick: () => dispatch({ type: 'CREATE_GAME', payload: { playerName: loggedInUser, gameMode: 'offline' } }), className: "flex items-center justify-center gap-3" }, React.createElement(UserGroupIcon, {className: "w-6 h-6"}), "Jugar Offline (Pass & Play)"),
-                React.createElement(Button, { disabled: true, className: "flex items-center justify-center gap-3" }, React.createElement(GlobeAltIcon, {className: "w-6 h-6"}), "Partida Online (próximamente)"),
-                React.createElement(SecondaryButton, { onClick: () => setIsHelpVisible(true), className: "!bg-transparent border-2 border-yellow-400 text-yellow-400 hover:!bg-yellow-400/20 !shadow-none active:!translate-y-0" }, "Cómo Jugar")
+        React.createElement("div", { className: "flex flex-col items-center justify-center w-full h-full min-h-screen px-4 py-8" },
+            React.createElement("div", { className: "text-center mb-8" },
+                React.createElement("h1", { className: "text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-shadow text-gold-gradient" }, "¡Hola, ", loggedInUser, "!"),
+                React.createElement("p", { className: "text-lg md:text-xl text-gray-300" }, "Elige un modo de juego")
+            ),
+            React.createElement(Card, { className: "w-full max-w-lg space-y-4 p-6 md:p-8" },
+                React.createElement(Button, { onClick: () => dispatch({ type: 'CREATE_GAME', payload: { playerName: loggedInUser, gameMode: 'offline' } }), className: "flex items-center justify-center gap-3 text-lg md:text-xl py-4 md:py-5" }, React.createElement(UserGroupIcon, {className: "w-7 h-7 md:w-8 md:h-8"}), "Jugar Offline (Pass & Play)"),
+                React.createElement(Button, { disabled: true, className: "flex items-center justify-center gap-3 text-lg md:text-xl py-4 md:py-5" }, React.createElement(GlobeAltIcon, {className: "w-7 h-7 md:w-8 md:h-8"}), "Partida Online (próximamente)"),
+                React.createElement(SecondaryButton, { onClick: () => setIsHelpVisible(true), className: "!bg-transparent border-2 border-yellow-400 text-yellow-400 hover:!bg-yellow-400/20 !shadow-none active:!translate-y-0 text-lg md:text-xl py-4 md:py-5" }, "Cómo Jugar")
             )
         )
     );
