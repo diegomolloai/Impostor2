@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 257">
+	<defs>
+		<linearGradient id="vite_svg__a" x1="28.13" x2="140.96" y1="21.15" y2="232.68" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#41d1ff" />
+			<stop offset="1" stop-color="#bd34fe" />
+		</linearGradient>
+		<linearGradient id="vite_svg__b" x1="102.81" x2="228.46" y1="34.87" y2="246.36" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffea83" />
+			<stop offset=".08" stop-color="#ffdd35" />
+			<stop offset="1" stop-color="#ffa800" />
+		</linearGradient>
+	</defs>
+	<path fill="url(#vite_svg__a)" d="M255.43 63.35A13.36 13.36 0 0 0 241.5 53.6l-90.4-52.19a13.36 13.36 0 0 0-13.37 0L47.3 53.6a13.36 13.36 0 0 0-6.69 11.57l-1.92 109.8a13.36 13.36 0 0 0 6.57 11.7l89.69 52.38a13.36 13.36 0 0 0 13.52 0l89.69-52.38a13.36 13.36 0 0 0 6.57-11.7l-1.92-109.8a13.36 13.36 0 0 0-.04-2.12M128 15.34l75.63 43.67l-26.15 15.1l-49.48-28.56zm-13.37.01L65.15 43.89l-26.27-15.1L114.63 15.35zM41.69 70.38l23.46 13.54v95.32l-23.46-13.67zm34.22 19.75L128 116.89v98.24l-52.09-30.29z" />
+	<path fill="url(#vite_svg__b)" d="m202.43 97.47l-61.12-35.28a13.36 13.36 0 0 0-13.37 0L66.82 97.47a13.36 13.36 0 0 0-6.68 11.57l-1.92 109.8a13.36 13.36 0 0 0 6.56 11.7l61.13 35.57a13.36 13.36 0 0 0 13.52 0l61.13-35.57a13.36 13.36 0 0 0 6.56-11.7l-1.92-109.8a13.36 13.36 0 0 0-6.71-11.57M128 226.24l-44.4-25.64V112.9l44.4 25.64zm44.4-87.7L128 164.18v-51.28l44.4-25.64z" />
+</svg>
