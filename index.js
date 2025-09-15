@@ -827,6 +827,7 @@ const RoleRevealScreen = ({ state, dispatch }) => {
                           React.createElement("h1", { className: "text-4xl font-bold text-gold-gradient text-shadow mt-1" }, currentPlayer.name)
                         ),
                         React.createElement("div", {className: "flex flex-col items-center"},
+                            // Solo mostrar icono genérico en el frente para todos
                             React.createElement(UserIcon, {className: "w-32 h-32 text-gray-500"}),
                             React.createElement("p", { className: "text-5xl font-bold text-gray-400" }, "???")
                         ),
@@ -844,8 +845,21 @@ const RoleRevealScreen = ({ state, dispatch }) => {
                              React.createElement("h1", { className: "text-3xl font-bold text-gold-gradient text-shadow" }, currentPlayer.name)
                         ),
                         React.createElement("div", { className: "flex-grow flex flex-col items-center justify-center text-center" },
-                            isImpostor ? React.createElement(SpyIcon, {className: "w-32 h-32 text-red-400"}) : React.createElement(FictionalTeamIcon, {className: "w-32 h-32"}),
-                            React.createElement("h2", { className: `text-6xl font-bold text-shadow mt-4 ${isImpostor ? 'text-red-400' : 'text-blue-300'}` }, isImpostor ? "IMPOSTOR" : "EQUIPO")
+                            // Solo mostrar imagen del futbolista si es del equipo, los impostores ven su icono de rol
+                            !isImpostor ? React.createElement("img", {
+                                src: `./public/futbolistas/${secretFootballer?.id}.png`,
+                                alt: secretFootballer?.name || "Futbolista",
+                                className: "w-52 h-52 object-contain mb-2 mt-4",
+                                onError: (e) => {
+                                    e.target.style.display = 'none';
+                                    e.target.nextSibling.style.display = 'block';
+                                }
+                            }) : React.createElement(SpyIcon, {className: "w-52 h-52 text-red-400 mb-2 mt-4"}),
+                            // Fallback icon para el equipo si no carga la imagen
+                            !isImpostor ? React.createElement("div", {className: "w-52 h-52 flex items-center justify-center mb-2 mt-4", style: {display: 'none'}},
+                                React.createElement(FictionalTeamIcon, {className: "w-52 h-52"})
+                            ) : null,
+                            React.createElement("h2", { className: `text-6xl font-bold text-shadow ${isImpostor ? 'text-red-400' : 'text-blue-300'}` }, isImpostor ? "IMPOSTOR" : "EQUIPO")
                         ),
                         React.createElement("div", { className: "text-center px-4" },
                             isImpostor ?
