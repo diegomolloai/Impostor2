@@ -190,89 +190,115 @@ const footballerData = {
     { id: 83, name: "Lamine Yamal", club: "Barcelona", nationality: "Spain" },
     { id: 84, name: "Rodrygo", club: "Real Madrid", nationality: "Brazil" },
     { id: 126, name: "Andrés Iniesta", club: "Barcelona", nationality: "Spain" },
-  ],
-  leyendas: [
-    { id: 101, name: "Pelé", club: "Santos", nationality: "Brazil" },
-    { id: 102, name: "Diego Maradona", club: "Napoli", nationality: "Argentina" },
-    { id: 103, name: "Johan Cruyff", club: "Ajax", nationality: "Netherlands" },
-    { id: 104, name: "Zinedine Zidane", club: "Real Madrid", nationality: "France" },
-    { id: 105, name: "Ronaldo Nazario", club: "Real Madrid", nationality: "Brazil" },
-    { id: 106, name: "Ronaldinho", club: "Barcelona", nationality: "Brazil" },
-    { id: 107, name: "Franz Beckenbauer", club: "Bayern Munich", nationality: "Germany" },
-    { id: 108, name: "Michel Platini", club: "Juventus", nationality: "France" },
-    { id: 109, name: "Alfredo Di Stéfano", club: "Real Madrid", nationality: "Argentina/Spain" },
-    { id: 110, name: "Ferenc Puskás", club: "Real Madrid", nationality: "Hungary" },
-    { id: 111, name: "Gerd Müller", club: "Bayern Munich", nationality: "Germany" },
-    { id: 112, name: "Lev Yashin", club: "Dynamo Moscow", nationality: "Soviet Union" },
-    { id: 113, name: "Paolo Maldini", club: "AC Milan", nationality: "Italy" },
-    { id: 114, name: "Franco Baresi", club: "AC Milan", nationality: "Italy" },
-    { id: 115, name: "Marco van Basten", club: "AC Milan", nationality: "Netherlands" },
-    { id: 116, name: "Ruud Gullit", club: "AC Milan", nationality: "Netherlands" },
-    { id: 117, name: "Lothar Matthäus", club: "Inter Milan", nationality: "Germany" },
-    { id: 118, name: "Eusébio", club: "Benfica", nationality: "Portugal" },
-    { id: 119, name: "George Best", club: "Manchester United", nationality: "Northern Ireland" },
-    { id: 120, name: "Bobby Charlton", club: "Manchester United", nationality: "England" },
-    { id: 121, name: "Garrincha", club: "Botafogo", nationality: "Brazil" },
-    { id: 122, name: "Sócrates", club: "Corinthians", nationality: "Brazil" },
-    { id: 123, name: "Zico", club: "Flamengo", nationality: "Brazil" },
-    { id: 124, name: "Roberto Baggio", club: "Juventus", nationality: "Italy" },
-    { id: 125, name: "Thierry Henry", club: "Arsenal", nationality: "France" },
-    { id: 126, name: "Andrés Iniesta", club: "Barcelona", nationality: "Spain" },
-    { id: 127, name: "Xavi Hernández", club: "Barcelona", nationality: "Spain" },
-    { id: 128, name: "Carles Puyol", club: "Barcelona", nationality: "Spain" },
-    { id: 129, name: "Kaká", club: "AC Milan", nationality: "Brazil" },
-    { id: 130, name: "Andriy Shevchenko", club: "AC Milan", nationality: "Ukraine" },
-    { id: 131, name: "Pavel Nedvěd", club: "Juventus", nationality: "Czech Republic" },
-    { id: 132, name: "Fabio Cannavaro", club: "Real Madrid", nationality: "Italy" },
-    { id: 133, name: "Alessandro Del Piero", club: "Juventus", nationality: "Italy" },
-    { id: 134, name: "Francesco Totti", club: "Roma", nationality: "Italy" },
-    { id: 135, name: "Andrea Pirlo", club: "Juventus", nationality: "Italy" },
-    { id: 136, name: "Gigi Buffon", club: "Juventus", nationality: "Italy" },
-    { id: 137, name: "Iker Casillas", club: "Real Madrid", nationality: "Spain" },
-    { id: 138, name: "Raúl González", club: "Real Madrid", nationality: "Spain" },
-    { id: 139, name: "David Beckham", club: "Manchester United", nationality: "England" },
-    { id: 140, name: "Steven Gerrard", club: "Liverpool", nationality: "England" },
-    { id: 141, name: "Frank Lampard", club: "Chelsea", nationality: "England" },
-    { id: 142, name: "Didier Drogba", club: "Chelsea", nationality: "Ivory Coast" },
-    { id: 143, name: "Samuel Eto'o", club: "Barcelona", nationality: "Cameroon" },
-    { id: 144, name: "Dennis Bergkamp", club: "Arsenal", nationality: "Netherlands" },
-    { id: 145, name: "Patrick Vieira", club: "Arsenal", nationality: "France" },
-    { id: 146, "name": "Roy Keane", "club": "Manchester United", "nationality": "Ireland" },
-    { id: 147, "name": "Paul Scholes", "club": "Manchester United", "nationality": "England" },
-    { id: 148, "name": "Ryan Giggs", "club": "Manchester United", "nationality": "Wales" },
-    { id: 149, "name": "Éric Cantona", "club": "Manchester United", "nationality": "France" },
-    { id: 150, "name": "Peter Schmeichel", "club": "Manchester United", "nationality": "Denmark" },
-    { id: 151, "name": "Oliver Kahn", "club": "Bayern Munich", "nationality": "Germany" },
-    { id: 152, "name": "Cafu", "club": "AC Milan", "nationality": "Brazil" },
-    { id: 153, "name": "Roberto Carlos", "club": "Real Madrid", "nationality": "Brazil" },
-    { id: 154, "name": "Javier Zanetti", "club": "Inter Milan", "nationality": "Argentina" },
-    { id: 155, "name": "Gabriel Batistuta", "club": "Fiorentina", "nationality": "Argentina" },
-    { id: 156, "name": "Hernán Crespo", "club": "Inter Milan", "nationality": "Argentina" },
-    { id: 157, "name": "Juan Román Riquelme", "club": "Boca Juniors", "nationality": "Argentina" },
-    { id: 158, "name": "Hristo Stoichkov", "club": "Barcelona", "nationality": "Bulgaria" },
-    { id: 159, "name": "Gheorghe Hagi", "club": "Galatasaray", "nationality": "Romania" },
-    { id: 160, "name": "Michael Laudrup", "club": "Barcelona", "nationality": "Denmark" },
-    { id: 161, "name": "Romário", "club": "Barcelona", "nationality": "Brazil" },
-    { id: 162, "name": "Rivaldo", "club": "Barcelona", "nationality": "Brazil" },
-    { id: 163, "name": "Luís Figo", "club": "Real Madrid", "nationality": "Portugal" },
-    { id: 164, "name": "Michael Ballack", "club": "Bayern Munich", "nationality": "Germany" },
-    { id: 165, "name": "Miroslav Klose", "club": "Bayern Munich", "nationality": "Germany" },
-    { id: 166, "name": "Philipp Lahm", "club": "Bayern Munich", "nationality": "Germany" },
-    { id: 167, "name": "Bastian Schweinsteiger", "club": "Bayern Munich", "nationality": "Germany" },
-    { id: 168, "name": "Arjen Robben", "club": "Bayern Munich", "nationality": "Netherlands" },
-    { id: 169, "name": "Franck Ribéry", "club": "Bayern Munich", "nationality": "France" },
-    { id: 170, "name": "Wesley Sneijder", "club": "Inter Milan", "nationality": "Netherlands" },
-    { id: 171, "name": "Clarence Seedorf", "club": "AC Milan", "nationality": "Netherlands" },
-    { id: 172, "name": "Edgar Davids", "club": "Juventus", "nationality": "Netherlands" },
-    { id: 173, "name": "Ruud van Nistelrooy", "club": "Manchester United", "nationality": "Netherlands" },
-    { id: 174, "name": "Alan Shearer", "club": "Newcastle United", "nationality": "England" },
-    { id: 175, "name": "Michael Owen", "club": "Liverpool", "nationality": "England" },
-    { id: 176, "name": "Fernando Torres", "club": "Liverpool", "nationality": "Spain" },
-    { id: 177, "name": "David Villa", "club": "Barcelona", "nationality": "Spain" },
-    { id: 178, "name": "Petr Čech", "club": "Chelsea", "nationality": "Czech Republic" },
-    { id: 179, "name": "Edwin van der Sar", "club": "Manchester United", "nationality": "Netherlands" },
-    { id: 180, "name": "Deco", "club": "Barcelona", "nationality": "Portugal" },
   ]
+};
+
+// Leyendas organizadas por dificultad (más conocidas a menos conocidas)
+// Siguiendo la misma lógica que los jugadores normales: principiante aparece en todas las categorías
+const legendsPrincipiante = [
+  // Las 25 leyendas más reconocidas mundialmente
+  { id: 101, name: "Pelé", club: "Santos", nationality: "Brazil" },
+  { id: 102, name: "Diego Maradona", club: "Napoli", nationality: "Argentina" },
+  { id: 104, name: "Zinedine Zidane", club: "Real Madrid", nationality: "France" },
+  { id: 105, name: "Ronaldo Nazario", club: "Real Madrid", nationality: "Brazil" },
+  { id: 106, name: "Ronaldinho", club: "Barcelona", nationality: "Brazil" },
+  { id: 103, name: "Johan Cruyff", club: "Ajax", nationality: "Netherlands" },
+  { id: 107, name: "Franz Beckenbauer", club: "Bayern Munich", nationality: "Germany" },
+  { id: 125, name: "Thierry Henry", club: "Arsenal", nationality: "France" },
+  { id: 139, name: "David Beckham", club: "Manchester United", nationality: "England" },
+  { id: 124, name: "Roberto Baggio", club: "Juventus", nationality: "Italy" },
+  { id: 129, name: "Kaká", club: "AC Milan", nationality: "Brazil" },
+  { id: 127, name: "Xavi Hernández", club: "Barcelona", nationality: "Spain" },
+  { id: 113, name: "Paolo Maldini", club: "AC Milan", nationality: "Italy" },
+  { id: 137, name: "Iker Casillas", club: "Real Madrid", nationality: "Spain" },
+  { id: 138, name: "Raúl González", club: "Real Madrid", nationality: "Spain" },
+  { id: 136, name: "Gigi Buffon", club: "Juventus", nationality: "Italy" },
+  { id: 163, name: "Luís Figo", club: "Real Madrid", nationality: "Portugal" },
+  { id: 140, name: "Steven Gerrard", club: "Liverpool", nationality: "England" },
+  { id: 141, name: "Frank Lampard", club: "Chelsea", nationality: "England" },
+  { id: 142, name: "Didier Drogba", club: "Chelsea", nationality: "Ivory Coast" },
+  { id: 161, name: "Romário", club: "Barcelona", nationality: "Brazil" },
+  { id: 162, name: "Rivaldo", club: "Barcelona", nationality: "Brazil" },
+  { id: 133, name: "Alessandro Del Piero", club: "Juventus", nationality: "Italy" },
+  { id: 134, name: "Francesco Totti", club: "Roma", nationality: "Italy" },
+  { id: 121, name: "Garrincha", club: "Botafogo", nationality: "Brazil" }
+];
+
+const legendsFacil = [
+  // Las siguientes 30 leyendas muy conocidas (solo para fácil y normal)
+  { id: 108, name: "Michel Platini", club: "Juventus", nationality: "France" },
+  { id: 109, name: "Alfredo Di Stéfano", club: "Real Madrid", nationality: "Argentina/Spain" },
+  { id: 110, name: "Ferenc Puskás", club: "Real Madrid", nationality: "Hungary" },
+  { id: 111, name: "Gerd Müller", club: "Bayern Munich", nationality: "Germany" },
+  { id: 112, name: "Lev Yashin", club: "Dynamo Moscow", nationality: "Soviet Union" },
+  { id: 114, name: "Franco Baresi", club: "AC Milan", nationality: "Italy" },
+  { id: 115, name: "Marco van Basten", club: "AC Milan", nationality: "Netherlands" },
+  { id: 116, name: "Ruud Gullit", club: "AC Milan", nationality: "Netherlands" },
+  { id: 117, name: "Lothar Matthäus", club: "Inter Milan", nationality: "Germany" },
+  { id: 118, name: "Eusébio", club: "Benfica", nationality: "Portugal" },
+  { id: 119, name: "George Best", club: "Manchester United", nationality: "Northern Ireland" },
+  { id: 120, name: "Bobby Charlton", club: "Manchester United", nationality: "England" },
+  { id: 122, name: "Sócrates", club: "Corinthians", nationality: "Brazil" },
+  { id: 123, name: "Zico", club: "Flamengo", nationality: "Brazil" },
+  { id: 128, name: "Carles Puyol", club: "Barcelona", nationality: "Spain" },
+  { id: 130, name: "Andriy Shevchenko", club: "AC Milan", nationality: "Ukraine" },
+  { id: 131, name: "Pavel Nedvěd", club: "Juventus", nationality: "Czech Republic" },
+  { id: 132, name: "Fabio Cannavaro", club: "Real Madrid", nationality: "Italy" },
+  { id: 135, name: "Andrea Pirlo", club: "Juventus", nationality: "Italy" },
+  { id: 143, name: "Samuel Eto'o", club: "Barcelona", nationality: "Cameroon" },
+  { id: 144, name: "Dennis Bergkamp", club: "Arsenal", nationality: "Netherlands" },
+  { id: 147, name: "Paul Scholes", club: "Manchester United", nationality: "England" },
+  { id: 148, name: "Ryan Giggs", club: "Manchester United", nationality: "Wales" },
+  { id: 149, name: "Éric Cantona", club: "Manchester United", nationality: "France" },
+  { id: 152, name: "Cafu", club: "AC Milan", nationality: "Brazil" },
+  { id: 153, name: "Roberto Carlos", club: "Real Madrid", nationality: "Brazil" },
+  { id: 155, name: "Gabriel Batistuta", club: "Fiorentina", nationality: "Argentina" },
+  { id: 168, name: "Arjen Robben", club: "Bayern Munich", nationality: "Netherlands" },
+  { id: 169, name: "Franck Ribéry", club: "Bayern Munich", nationality: "France" },
+  { id: 171, name: "Clarence Seedorf", club: "AC Milan", nationality: "Netherlands" }
+];
+
+const legendsNormal = [
+  // Las 25 leyendas restantes (solo para normal)
+  { id: 145, name: "Patrick Vieira", club: "Arsenal", nationality: "France" },
+  { id: 146, name: "Roy Keane", club: "Manchester United", nationality: "Ireland" },
+  { id: 150, name: "Peter Schmeichel", club: "Manchester United", nationality: "Denmark" },
+  { id: 151, name: "Oliver Kahn", club: "Bayern Munich", nationality: "Germany" },
+  { id: 154, name: "Javier Zanetti", club: "Inter Milan", nationality: "Argentina" },
+  { id: 156, name: "Hernán Crespo", club: "Inter Milan", nationality: "Argentina" },
+  { id: 157, name: "Juan Román Riquelme", club: "Boca Juniors", nationality: "Argentina" },
+  { id: 158, name: "Hristo Stoichkov", club: "Barcelona", nationality: "Bulgaria" },
+  { id: 159, name: "Gheorghe Hagi", club: "Galatasaray", nationality: "Romania" },
+  { id: 160, name: "Michael Laudrup", club: "Barcelona", nationality: "Denmark" },
+  { id: 164, name: "Michael Ballack", club: "Bayern Munich", nationality: "Germany" },
+  { id: 165, name: "Miroslav Klose", club: "Bayern Munich", nationality: "Germany" },
+  { id: 166, name: "Philipp Lahm", club: "Bayern Munich", nationality: "Germany" },
+  { id: 167, name: "Bastian Schweinsteiger", club: "Bayern Munich", nationality: "Germany" },
+  { id: 170, name: "Wesley Sneijder", club: "Inter Milan", nationality: "Netherlands" },
+  { id: 172, name: "Edgar Davids", club: "Juventus", nationality: "Netherlands" },
+  { id: 173, name: "Ruud van Nistelrooy", club: "Manchester United", nationality: "Netherlands" },
+  { id: 174, name: "Alan Shearer", club: "Newcastle United", nationality: "England" },
+  { id: 175, name: "Michael Owen", club: "Liverpool", nationality: "England" },
+  { id: 176, name: "Fernando Torres", club: "Liverpool", nationality: "Spain" },
+  { id: 177, name: "David Villa", club: "Barcelona", nationality: "Spain" },
+  { id: 178, name: "Petr Čech", club: "Chelsea", nationality: "Czech Republic" },
+  { id: 179, name: "Edwin van der Sar", club: "Manchester United", nationality: "Netherlands" },
+  { id: 180, name: "Deco", club: "Barcelona", nationality: "Portugal" }
+];
+
+const footballerLegends = {
+  principiante: legendsPrincipiante,
+  facil: [...legendsPrincipiante, ...legendsFacil],
+  normal: [...legendsPrincipiante, ...legendsFacil, ...legendsNormal]
+};
+
+// Función para combinar jugadores actuales con leyendas
+const getCombinedFootballers = (category, includeLegends) => {
+  const currentPlayers = footballerData[category] || [];
+  if (!includeLegends) return currentPlayers;
+  
+  const legends = footballerLegends[category] || [];
+  return [...currentPlayers, ...legends];
 };
 
 // Enum from types.ts
@@ -380,6 +406,7 @@ const initialState = {
   gameMode: null,
   numberOfImpostors: 1,
   footballerCategory: 'principiante',
+  includeLegends: false,
 };
 
 const gameReducer = (state, action) => {
@@ -425,7 +452,7 @@ const gameReducer = (state, action) => {
         [shuffledPlayersWithRoles[i], shuffledPlayersWithRoles[j]] = [shuffledPlayersWithRoles[j], shuffledPlayersWithRoles[i]];
       }
 
-      const categoryFootballers = footballerData[state.footballerCategory];
+      const categoryFootballers = getCombinedFootballers(state.footballerCategory, state.includeLegends);
       const lockedIds = getLockedFootballerIds();
       
       let availableFootballers = categoryFootballers.filter(f => !lockedIds.includes(f.id));
@@ -560,6 +587,7 @@ const gameReducer = (state, action) => {
             players: state.players.map(p => ({...p, role: null, isEliminated: false, score: p.score})),
             numberOfImpostors: state.numberOfImpostors,
             footballerCategory: state.footballerCategory,
+            includeLegends: state.includeLegends,
         };
     case 'RETURN_TO_LOBBY':
         return {
@@ -699,6 +727,12 @@ const LobbyScreen = ({ state, dispatch }) => {
         }
     };
 
+    const getPlayerCount = (category) => {
+        const currentPlayers = footballerData[category]?.length || 0;
+        const legendsCount = footballerLegends[category]?.length || 0;
+        return currentPlayers + (state.includeLegends ? legendsCount : 0);
+    };
+
     const impostorOptions = [
         { value: 1, label: '1 Impostor', minPlayers: 3 },
         { value: 2, label: '2 Impostores', minPlayers: 7 },
@@ -729,11 +763,21 @@ const LobbyScreen = ({ state, dispatch }) => {
                 React.createElement("div", null,
                     React.createElement("label", { className: "block text-sm font-medium text-gray-300 mb-1" }, "Categoría de Futbolistas"),
                     React.createElement(Select, { value: footballerCategory, onChange: e => dispatch({ type: 'UPDATE_GAME_SETTINGS', payload: { footballerCategory: e.target.value } }) },
-                        React.createElement("option", { value: "principiante" }, "Principiante"),
-                        React.createElement("option", { value: "facil" }, "Fácil"),
-                        React.createElement("option", { value: "normal" }, "Normal"),
-                        React.createElement("option", { value: "leyendas" }, "Leyendas")
+                        React.createElement("option", { value: "principiante" }, `Principiante (~${getPlayerCount('principiante')} jugadores)`),
+                        React.createElement("option", { value: "facil" }, `Fácil (~${getPlayerCount('facil')} jugadores)`),
+                        React.createElement("option", { value: "normal" }, `Normal (~${getPlayerCount('normal')} jugadores)`)
                     )
+                ),
+                React.createElement("div", { className: "flex items-center space-x-3" },
+                    React.createElement("button", { 
+                        onClick: () => dispatch({ type: 'UPDATE_GAME_SETTINGS', payload: { includeLegends: !state.includeLegends } }),
+                        className: `flex items-center justify-center w-6 h-6 rounded-full transition-all duration-200 text-center leading-none ${state.includeLegends ? 'bg-yellow-400 text-yellow-900 shadow-lg shadow-yellow-400/50 scale-110' : 'bg-gray-600 text-gray-400 hover:bg-gray-500'}`,
+                        style: { fontSize: '12px' }
+                    }, state.includeLegends ? "⚽" : "○"),
+                    React.createElement("label", { 
+                        onClick: () => dispatch({ type: 'UPDATE_GAME_SETTINGS', payload: { includeLegends: !state.includeLegends } }),
+                        className: "text-sm font-medium text-gray-300 cursor-pointer select-none" 
+                    }, "Incluir leyendas del fútbol")
                 )
             ),
             React.createElement("h2", { className: "text-2xl font-semibold mb-4 text-shadow" }, "Jugadores (", players.length, "/15)"),
