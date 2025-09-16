@@ -275,7 +275,6 @@ const legendsNormal = [
   { id: 166, name: "Philipp Lahm", club: "Bayern Munich", nationality: "Germany" },
   { id: 167, name: "Bastian Schweinsteiger", club: "Bayern Munich", nationality: "Germany" },
   { id: 170, name: "Wesley Sneijder", club: "Inter Milan", nationality: "Netherlands" },
-  { id: 172, name: "Edgar Davids", club: "Juventus", nationality: "Netherlands" },
   { id: 173, name: "Ruud van Nistelrooy", club: "Manchester United", nationality: "Netherlands" },
   { id: 174, name: "Alan Shearer", club: "Newcastle United", nationality: "England" },
   { id: 175, name: "Michael Owen", club: "Liverpool", nationality: "England" },
